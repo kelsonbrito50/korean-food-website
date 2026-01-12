@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Korean Food & Drinks</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Korean Food & Drinks</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="menu.html">menu</a></li>
+                    <li><a href="contact.html" class="current">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="contact-content">
+            <article>
+                <h2>Get in Touch</h2>
+                <p>Have questions or want to make a reservation? Fill out the form below and we'll get back to you as soon as possible.</p>
+                
+                <form action="submit-form.php" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inquiry-type">Type of Inquiry *</label>
+                        <select id="inquiry-type" name="inquiry-type" required>
+                            <option value="">Please select...</option>
+                            <option value="reservation">Reservation</option>
+                            <option value="catering">Catering Inquiry</option>
+                            <option value="cooking-class">Cooking Class</option>
+                            <option value="general">General Question</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="party-size">Party Size (for reservations)</label>
+                        <input type="number" id="party-size" name="party-size" min="1" max="20" placeholder="Number of guests">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Preferred Date (for reservations)</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Preferred Time (for reservations)</label>
+                        <input type="time" id="time" name="time">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us more about your inquiry..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            Subscribe to our newsletter for special offers and events
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </article>
+            
+            <article>
+                <h2>Visit Our Restaurant</h2>
+                
+                <div class="info-block">
+                    <h3>Address</h3>
+                    <p>Korean Food & Drinks<br>
+                        428 Koreatown Plaza<br>   
+                        Houston, TX 77002</p>
+                </div>
+                
+                <div class="info-block">
+                    <h3>Phone</h3>
+                    <p><a href="tel:2135550199">(213) 555-0199</a></p>
+                </div>
+                
+                <div class="info-block">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@koreanfooddrinks.com">info@koreanfooddrinks.com</a></p>
+                </div>
+                
+                <div class="info-block">
+                    <h3>Hours</h3>
+                    <p>Monday - Thursday: 11:00 AM - 10:00 PM<br>
+                        Friday - Saturday: 11:00 AM - 11:00 PM<br>
+                        Sunday: 12:00 PM - 9:00 PM</p>
+                </div>
+                
+                <div class="info-block">
+                    <h3>Map</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6927.760652904413!2d-95.36839244635563!3d29.75217648362401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1761773905591!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </article>
+        </div>
+        
+        <aside>
+            <section>
+                <h2>Quick Contact</h2>
+                <p><strong>Reservations:</strong><br>
+                    Call or text:<br>
+                    <a href="tel:2135550199">(213) 555-0199</a></p>
+                <p><strong>For same-day reservations, please call directly.</strong></p>
+            </section>
+
+            <section>
+                <h2>Parking Information</h2>
+                <p>Street parking available. We also validate parking for the Koreatown Plaza parking structure.</p>
+            </section>
+            
+            <section>
+                <h2>Follow Us</h2>
+                <p>Stay updated with our latest dishes, events, and promotions!</p>
+                <ul class="social-links">
+                    <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+                </ul>
+            </section>
+        </aside>
+        
+        <footer>
+            <p>&copy; 2024 Korean Food & Drinks | <a href="contact.html">Contact Us</a> | <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> | <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></p>
+        </footer>
+    </div>
+</body>
+</html>
